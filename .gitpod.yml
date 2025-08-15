@@ -1,0 +1,44 @@
+# Configuração do Gitpod para o Productivity App
+image:
+  file: .gitpod.Dockerfile
+
+# Portas que serão expostas
+ports:
+  - port: 5000
+    onOpen: open-preview
+    name: Flask App
+    description: Aplicação Flask principal
+
+# Tarefas que serão executadas na inicialização
+tasks:
+  - name: Setup Environment
+    init: |
+      # Instalar dependências Python
+      pip install -r requirements.txt
+      # Inicializar banco de dados se necessário
+      python src/init_pets.py
+    command: |
+      # Iniciar a aplicação Flask
+      python src/main.py
+
+# Extensões do VS Code que serão instaladas automaticamente
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.flake8
+    - ms-python.pylint
+    - ms-toolsai.jupyter
+    - bradlc.vscode-tailwindcss
+    - esbenp.prettier-vscode
+    - ms-vscode.vscode-json
+
+# Configurações do GitHub
+github:
+  prebuilds:
+    # Executar prebuild em push para master/main
+    master: true
+    # Executar prebuild em pull requests
+    pullRequests: true
+    # Executar prebuild em novos branches
+    addBadge: true
+

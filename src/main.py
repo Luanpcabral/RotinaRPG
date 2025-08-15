@@ -12,6 +12,7 @@ from src.routes.achievements import achievements_bp, init_default_achievements
 from src.routes.store import store_bp
 from src.routes.timer import timer_bp
 from src.routes.pets import pets_bp
+from src.routes.file_manager import file_manager_bp
 from src.utils.daily_reset import schedule_daily_reset
 from src.models.pet import Pet, UserPet, PetBoxOpening  # Importar modelos de pets
 
@@ -28,6 +29,7 @@ app.register_blueprint(achievements_bp, url_prefix='/api')
 app.register_blueprint(store_bp, url_prefix='/api')
 app.register_blueprint(timer_bp, url_prefix='/api')
 app.register_blueprint(pets_bp, url_prefix='/api')
+app.register_blueprint(file_manager_bp, url_prefix='/api')
 
 # Configuração do banco de dados
 app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(os.path.dirname(__file__), 'database', 'app.db')}"

@@ -1,26 +1,36 @@
-# Productivity App
+# Productivity App - Aplicação de Produtividade Gamificada
 
-Um aplicativo de produtividade gamificado com sistema de pets, conquistas e tarefas.
+Uma aplicação web gamificada para gerenciamento de tarefas e produtividade, com sistema de pets virtuais, conquistas e loja de itens.
 
-## Funcionalidades
+## 🚀 Abrir no Gitpod
 
-- Sistema de tarefas com XP e moedas
-- Pets colecionáveis com diferentes raridades
-- Sistema de conquistas
-- Timer Pomodoro
-- Loja virtual
-- Sistema de níveis e avatares
+[![Abrir no Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/seu-usuario/productivity-app)
 
-## Tecnologias
+## 📋 Funcionalidades
 
-- **Backend**: Flask + SQLAlchemy
-- **Frontend**: React + Vite
-- **Banco de dados**: SQLite
-- **Estilo**: CSS personalizado
+- **Sistema de Tarefas**: Crie, gerencie e complete tarefas diárias
+- **Pets Virtuais**: Cuide de pets virtuais que evoluem conforme você completa tarefas
+- **Sistema de XP**: Ganhe experiência e suba de nível
+- **Conquistas**: Desbloqueie conquistas por completar objetivos
+- **Loja Virtual**: Compre itens e melhorias com moedas ganhas
+- **Timer Pomodoro**: Técnica de produtividade integrada
+- **Dashboard**: Visualize seu progresso e estatísticas
 
-## Como executar
+## 🛠️ Tecnologias
 
-### Desenvolvimento local
+- **Backend**: Python Flask + SQLAlchemy
+- **Frontend**: HTML, CSS, JavaScript
+- **Banco de Dados**: SQLite
+- **Estilização**: CSS personalizado com tema roxo
+
+## 🏃‍♂️ Como Executar
+
+### No Gitpod (Recomendado)
+1. Clique no botão "Abrir no Gitpod" acima
+2. Aguarde o ambiente ser configurado automaticamente
+3. A aplicação será iniciada automaticamente na porta 5000
+
+### Desenvolvimento Local
 
 1. Instale as dependências:
 ```bash
@@ -32,7 +42,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-3. Acesse: http://localhost:5001
+3. Acesse: http://localhost:5000
 
 ### Deploy
 
