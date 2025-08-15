@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Productivity App - Aplicação de Produtividade Gamificada
 
 Uma aplicação web gamificada para gerenciamento de tarefas e produtividade, com sistema de pets virtuais, conquistas e loja de itens.
@@ -68,3 +69,8 @@ src/
 - `/api/timer` - Timer Pomodoro
 - `/api/pets` - Sistema de pets
 
+=======
+# RotinaRPG Frontend
+
+This is the frontend for the RotinaRPG application.
+>>>>>>> 3d26b1339cb035c20e853afd54381556799b456a
